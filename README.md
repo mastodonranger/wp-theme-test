@@ -1,2 +1,2 @@
 # wp-theme-test
-Testing github project for learning wp themes.
+Cool ass shit, with paul and mitt

@@ -1,0 +1,239 @@
+/**
+ * The style of the woocommerce compare products
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.51em;
+    color: #777;
+    background: #f4f4f4 !important;
+	padding: 30px 20px 20px;
+}
+
+table.compare-list {
+    margin: 0;
+    table-layout: fixed;
+}
+
+/* plugin fixedheadertable fix */
+table.compare-list thead, table.compare-list tfoot {
+    display: none;
+}
+
+.table-wrapper {
+    width: 100%;
+}
+
+.compare-title {
+    color: #333;
+    font-weight: 600;
+    display: block;
+    font-family: 'Droid Serif', sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+table.compare-list th, table.compare-list td,
+table.compare-list th, table.compare-list .price.repeated td {
+    padding: 10px 20px;
+}
+
+table.compare-list td:not(:first-child),
+table.compare-list th:not(:first-child)
+{
+    border-left: 2px solid #999;
+}
+
+table.compare-list tr td:last-child {
+	border-right: 2px solid #999;
+}
+
+table.compare-list th,
+table.compare-list td {
+
+}
+
+table.compare-list .description p {
+	font-size: 13px;
+	line-height: 21px;
+}
+
+table.compare-list tr.image th,
+table.compare-list tr.title th,
+table.compare-list tr.price th,
+table.compare-list tr.add-to-cart th {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+table.compare-list .remove {
+	display: inline-block;
+	margin-left: 3px;
+}
+
+table.compare-list .add-to-cart td a {
+	padding: 3px 18px;
+	font-size: 14px;
+	cursor: pointer;
+	display: inline-block;
+	border-width: 2px;
+	border-style: solid;
+	color: #333;
+	border-color: #333;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+    text-decoration: none;
+
+	-webkit-transition: color .7s ease, border-color .7s ease, background-color .7s ease;
+			transition: color .7s ease, border-color .7s ease, background-color .7s ease;
+}
+
+table.compare-list .add-to-cart td a:hover {
+	border-color: #333;
+	color: #fff;
+	background-color: #333;
+
+	-webkit-transition: color .5s ease, border-color .5s ease, background-color .5s ease;
+			transition: color .5s ease, border-color .5s ease, background-color .5s ease;
+}
+
+table.compare-list .stock td span { color: #269300; }
+table.compare-list .stock td span.out-of-stock { color: #ff0000; }
+
+table.compare-list th .fixed-th {  width: 180px; }
+
+table.compare-list th {
+    width: 180px;
+    max-width: 180px;
+    min-width: 180px;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+	background-color: #999;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 10px 20px;
+}
+
+table.compare-list td {
+    width: 230px;
+    max-width: 230px;
+    min-width: 230px;
+    text-align: left;
+	background-color: #f4f4f4;
+
+	-webkit-transition: background-color .7s ease;
+			transition: background-color .7s ease;
+}
+
+table.compare-list tr:hover > td {
+	background-color: #fff;
+
+	-webkit-transition: background-color .1s ease;
+			transition: background-color .1s ease;
+}
+
+/*!
+* jquery.fixedHeaderTable. The jQuery fixedHeaderTable plugin
+*
+* Copyright (c) 2011 Mark Malek
+* http://fixedheadertable.com
+*
+* Licensed under MIT
+* http://www.opensource.org/licenses/mit-license.php
+*
+* http://docs.jquery.com/Plugins/Authoring
+* jQuery authoring guidelines
+*
+* Launch  : October 2009
+* Version : 1.3
+* Released: May 9th, 2011
+*
+*
+* all CSS sizing (width,height) is done in pixels (px)
+*/
+
+/* @group Reset */
+
+.fht-table,
+.fht-table thead,
+.fht-table tfoot,
+.fht-table tbody,
+.fht-table tr,
+.fht-table th,
+.fht-table td {
+    /* position */
+    margin: 0;
+
+    /* size */
+    padding: 0;
+
+    /* text */
+    font-size: 100%;
+    font: inherit;
+    vertical-align: top;
+}
+
+.fht-table {
+    /* appearance */
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* @end */
+
+/* @group Content */
+
+.fht-table-wrapper,
+.fht-table-wrapper .fht-thead,
+.fht-table-wrapper .fht-tfoot,
+.fht-table-wrapper .fht-fixed-column .fht-tbody,
+.fht-table-wrapper .fht-fixed-body .fht-tbody,
+.fht-table-wrapper .fht-tbody {
+    /* appearance */
+    overflow: hidden;
+
+    /* position */
+    position: relative;
+}
+
+.fht-table-wrapper .fht-fixed-body .fht-tbody,
+.fht-table-wrapper .fht-tbody {
+    /* appearance */
+    overflow: auto;
+}
+
+.fht-table-wrapper .fht-table .fht-cell {
+    /* appearance */
+    overflow: hidden;
+
+    /* size */
+    height: 1px;
+}
+
+.fht-table-wrapper .fht-fixed-column,
+.fht-table-wrapper .fht-fixed-body {
+    /* position */
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.fht-table-wrapper .fht-fixed-column {
+    /* position */
+    z-index: 1;
+}
+
+/* @end */

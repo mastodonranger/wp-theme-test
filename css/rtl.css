@@ -1,0 +1,2092 @@
+/* ------------------------------------------------
+
+		Right To Left Layout
+
+------------------------------------------------ */
+
+	body{
+		direction: rtl;
+		unicode-bidi: embed;
+	}
+
+	.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+		float: right;
+	}
+
+/* ------------------------------------------------
+
+		2. General Classes
+
+------------------------------------------------ */
+
+	.align_left,
+	.left_edge,
+	.section_btn_4 {
+		text-align: right;
+	}
+
+	.align_right,
+	.right_edge{
+		text-align: left;
+	}
+
+	.alignleft{
+		float: right;
+	}
+
+	.alignright{
+		float: left;
+	}
+
+	img.alignleft{
+		margin-right: 0px;
+		margin-left: 20px;
+	}
+
+	img.alignright{
+		margin-left: 0px;
+		margin-right: 20px;
+	}
+
+	.table_row_xs > [class|="col"]:first-child{
+		padding-right: 0px;
+		padding-left: 15px;
+	}
+
+	.table_row_xs > [class|="col"]:last-child{
+		padding-right: 15px;
+		padding-left: 0px;
+	}
+
+/* ------------------------------------------------
+
+		3. Header
+
+------------------------------------------------ */
+
+	.header_actions > li:not(:first-child){
+		margin-left: 0px;
+		margin-right: 12px;
+	}
+
+	.dropdown{
+		text-align: right;
+	}
+
+	.md_csstransforms3d .dropdown{
+		-webkit-transform: translate3d(15px, 15px, 0);
+		   -moz-transform: translate3d(15px, 15px, 0);
+			 -o-transform: translate3d(15px, 15px, 0);
+			-ms-transform: translate3d(15px, 15px, 0);
+				transform: translate3d(15px, 15px, 0);
+	}
+
+	.info_link .si-icon{
+		margin-right: 0px;
+		margin-left: 8px;
+	}
+
+	.info_link.w_spacing .si-icon{
+		margin-left: 0px;
+	}
+
+	.info_link > img,
+	.language_change .submenu img{
+		margin-right: 0px;
+		margin-left: 10px;
+	}
+
+	#language_btn::after,
+	#currency_btn::after{
+		margin-left: 0px;
+		margin-right: 6px;
+	}
+
+	.info_link[data-amount]::after{
+		margin-left: 0px;
+		margin-right: 8px;
+	}
+
+	/* --------------------------------------------
+			3.1. Horizontal Navigation
+	-------------------------------------------- */
+
+		.navigation > li{
+			text-align: right;
+		}
+
+		.navigation > li:not(:last-child){
+			margin-right: 0px;
+			margin-left: 35px;
+		}
+
+		.navigation > [class*="has_"] > a::after{
+			margin-left: 0px;
+			margin-right: 8px;
+		}
+
+		.has_submenu .dropdown{
+			left: auto;
+			right: -20px;
+		}
+
+		.has_megamenu .dropdown{
+			right: auto;
+			left: -30px;
+		}
+
+		#mega_main_menu > .menu_holder > .menu_inner > ul > li.multicolumn_dropdown .mega_dropdown {
+			right: auto;
+			left: -15px;
+		}
+
+		.submenu a{
+			padding-right: 20px;
+			padding-left: 15px;
+		}
+
+		.has_megamenu .submenu > li > a{
+			padding-left: 15px;
+			padding-right: 0px;
+		}
+
+		.has_megamenu .has_submenu .submenu > li > a{
+			padding-right: 20px;
+		}
+
+		.has_submenu .has_submenu > a{
+			padding-right: 20px;
+			padding-left: 30px;
+		}
+
+		.nav_title{
+			margin-right: 15px;
+			margin-left: 0px;
+		}
+
+		.has_megamenu .has_submenu > a::after,
+		.has_submenu .has_submenu > a::after{
+			content: "\ea7a";
+			right: auto;
+			left: 0px;
+		}
+
+		.has_submenu .has_submenu > a::after{
+			left: 15px;
+		}
+
+		.has_submenu .has_submenu .dropdown,
+		.has_megamenu .has_submenu .dropdown{
+			left: auto;
+			right: 100%;
+			margin: 0 10px 0 0;
+		}
+
+		.has_submenu .has_submenu > .dropdown::before,
+		.has_megamenu .has_submenu > .dropdown::before{
+			right: auto;
+			left: 100%;
+		}
+
+		/* submenu reverse*/
+
+		.has_submenu .has_submenu.reverse > a::after,
+		.has_megamenu .has_submenu.reverse > a::after{
+			content: "\ea7b";
+		}
+
+		.has_submenu .has_submenu.reverse > .dropdown,
+		.has_megamenu .has_submenu.reverse > .dropdown{
+			right: auto;
+			left: 100%;
+			margin-left: 10px;
+			margin-right: 0px;
+		}
+
+		.has_submenu .has_submenu.reverse > .dropdown::before,
+		.has_megamenu .has_submenu.reverse > .dropdown::before{
+			right: 100%;
+			left: auto;
+		}
+		
+		/*end of reverse*/
+
+	/* --------------------------------------------
+			3.2. Vertical Navigation
+	-------------------------------------------- */
+
+		.vertical_navigation .submenu{
+			padding-left: 0px;
+			padding-right: 20px;
+		}
+
+		.vertical_navigation .has_submenu > a{
+			padding-right: 0px;
+			padding-left: 20px;
+		}
+
+		.vertical_navigation .has_submenu > a::after{
+			right: auto;
+			left: 0px;
+		}
+
+	/* --------------------------------------------
+			3.4. Shopping Cart
+	-------------------------------------------- */
+
+		.shopping_cart{
+			right: auto;
+			left: 0px;
+		}
+
+		.product_thumb{
+			float: right;
+			margin-right: 0px;
+			margin-left: 20px;
+		}
+
+		.shopping_cart .close{
+			right: auto;
+			left: 20px;
+		}
+
+		.shopping_cart .products_list .product_name{
+			padding-right: 0px;
+			padding-left: 20px;
+		}
+
+		.sc_total_price{
+			text-align: left;
+		}
+
+	/* --------------------------------------------
+			3.5. Header Style 2, 6
+	-------------------------------------------- */
+
+		#header.style_2 .header_actions,
+		#header.style_6 .header_actions{
+			margin-left: 0px;
+			margin-right: 32px;
+		}
+
+	/* --------------------------------------------
+			3.8. Side Header
+	-------------------------------------------- */
+
+		.side_header #header{
+			left: auto;
+			right: 0;
+		}
+
+		.side_header:not(.transparent_header_type) .wide_layout{
+			margin-left: 0;
+			margin-right: 260px;
+		}
+
+		.has_submenu > a::after, .has_megamenu > a::after{
+			margin-left: 0px;
+			margin-right: 8px;
+		}
+
+/* ------------------------------------------------
+
+		4. Basic Elements
+
+------------------------------------------------ */
+
+	/* --------------------------------------------
+			4.1. Typography
+	-------------------------------------------- */
+
+		[class*="dc_type"] .dc{
+			float: right;
+		}
+
+		.dc_type_1 .dc{
+			margin-right: 0px;
+			margin-left: 20px;
+		}
+
+		.dc_type_2 .dc{
+			margin-right: 0px;
+			margin-left: 15px;
+		}
+
+		.dc_type_3 .dc,
+		.dc_type_4 .dc{
+			margin-right: 0px;
+			margin-left: 13px;
+		}
+
+	/* --------------------------------------------
+			4.2. Buttons
+	-------------------------------------------- */
+
+		.back_to_top{
+			right: auto;
+			left: 60px;
+		}
+
+		/* with icons */
+
+		.btn i[class|="icon"]{
+			margin-right: 0px;
+			margin-left: 3px;
+		}
+
+		.tp-leftarrow .btn::before,
+		.nav_prev::before{
+			content: '\e8ac';
+		}
+
+		.tp-rightarrow .btn::before,
+		.nav_next::before{
+			content: '\e8ab';
+		}
+
+		.special_message .close{
+			right: auto;
+			left: 20px;
+		}
+
+		.buttons_set{
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+
+	/* --------------------------------------------
+			4.3. Lists
+	-------------------------------------------- */
+
+		.list[class*="type_"] li{
+			padding-left: 0px;
+			padding-right: 23px;
+		}
+
+		.list li::before{
+			left: auto;
+			right: 0px;
+		}
+
+		.experience_list .work_time{
+			float: left;
+			text-align: left;
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+
+		.sub_nav > li:not(:last-child)::after{
+			margin-right: 8px;
+			margin-left: 4px;
+		}
+
+		.h_info_list.alignright .dropdown{
+			right: auto;
+			left: -20px;
+		}
+
+		.h_info_list.alignleft .dropdown{
+			left: auto;
+			right: -20px;
+		}
+
+		.h_info_list > li:not(:last-child){
+			border-width: 0 0 0 1px;
+		}
+
+		.container .h_info_list:only-child > li:first-child,
+		.pseudo_container .h_info_list:only-child > li:first-child{
+			padding-left: 20px;
+			padding-right: 0px;
+		}
+
+		.container .h_info_list:only-child > li:last-child,
+		.pseudo_container .h_info_list:only-child > li:last-child{
+			padding-right: 20px;
+			padding-left: 0px;
+		}
+
+		.site_settings > li:not(:first-child){
+			margin-left: 0px;
+			margin-right: 17px;
+		}
+
+		.sizes_filter_list > li{
+			float: right;
+		}
+
+	/* --------------------------------------------
+			4.4. Tables
+	-------------------------------------------- */
+
+		th{
+			text-align: right;
+		}
+
+		.table_wrap{
+			border-left-width: 0px;
+			border-right-width: 0px;
+		}
+
+		th:first-child, td:first-child{
+			border-left-width: 2px;
+		}
+
+		/* --------------------------------------------
+				4.4.3. Wishlist Table
+		-------------------------------------------- */
+
+			.wishlist_table tfoot .social_links{
+				margin-left: 0px;
+				margin-right: 7px;
+			}
+
+	/* --------------------------------------------
+			4.5. Forms
+	-------------------------------------------- */
+
+		input[type="radio"] + label,
+		input[type="checkbox"] + label{
+			margin-right: 0px;
+			margin-left: 25px;
+			padding-left: 0px;
+			padding-right: 36px;
+		}
+
+		input[type="radio"] + label::before,
+		input[type="checkbox"] + label::before{
+			left: auto;
+			right: 0px;
+		}
+
+		input[type="radio"].small + label,
+		input[type="checkbox"].small + label{
+			padding-left: 0px;
+			padding-right: 31px;
+		}
+
+		input[type="checkbox"].color_checkbox + label{
+			padding: 0 30px 0 0;
+		}
+
+		.active_option{
+			padding-right: 20px;
+			padding-left: 50px;
+		}
+
+		.active_option::after{
+			right: auto;
+			left: 20px;
+		}
+
+		.left_labels label{
+			float: right;
+			padding-right: 0px;
+			padding-left: 10px;
+		}
+
+		.searchform_inline button{
+			right: auto;
+			left: 10px;
+		}
+
+		.searchform_inline > input[type="text"]{
+			padding-right: 20px;
+			padding-left: 50px;
+		}
+
+		.searchform input[type="text"]{
+			padding-right: 20px;
+			padding-left: 60px;
+		}
+
+		.searchform button,
+		.searchform_inline button{
+			right: auto;
+			left: 20px;
+		}
+
+		.login_form.streamlined{
+			text-align: right;
+		}
+
+		.login_form input:not([type="submit"]){
+			padding-left: auto;
+			padding-right: 47px;
+		}
+
+		.login_form li > i{
+			left: auto;
+			right: 0px;
+		}
+
+		.streamlined_form > *,
+		.input_box{
+			float: right;
+		}
+
+		.streamlined_form input:not([type="submit"]){
+			margin-right: 0px;
+			margin-left: 4px;
+		}
+
+		.qty:not(:only-child){
+			margin-right: 0px;
+			margin-left: 2px;
+		}
+
+		.qty_btn.incr{
+			right: auto;
+			left: 0;
+		}
+
+		.qty_btn.decr{
+			left: auto;
+			right: 0px;
+		}
+
+		h3 label{
+			margin-left: 0px !important;
+			margin-right: 13px !important;
+		}
+
+		h3 label:empty{
+			padding-left: 0px !important;
+			padding-right: 26px !important;
+		}
+
+	/* --------------------------------------------
+			4.6. Tooltips
+	-------------------------------------------- */
+
+		.md_csstransforms3d .tooltip.top,
+		.md_csstransforms3d .tooltip.bottom{
+			-webkit-transform: translate3d(-35%, 10px, 0);
+			   -moz-transform: translate3d(-35%, 10px, 0);
+			     -o-transform: translate3d(-35%, 10px, 0);
+			    -ms-transform: translate3d(-35%, 10px, 0);
+			    	transform: translate3d(-35%, 10px, 0);
+		}
+
+		.md_no-csstransforms3d .tooltip.top,
+		.md_no-csstransforms3d .tooltip.bottom{
+			-webkit-transform: translate(-35%, 10px);
+			   -moz-transform: translate(-35%, 10px);
+			     -o-transform: translate(-35%, 10px);
+			    -ms-transform: translate(-35%, 10px);
+			    	transform: translate(-35%, 10px);
+		}
+
+		.md_csstransforms3d .tooltip.left,
+		.md_csstransforms3d .tooltip.right{
+			-webkit-transform: translate3d(15px, 5px, 0);
+			   -moz-transform: translate3d(15px, 5px, 0);
+			     -o-transform: translate3d(15px, 5px, 0);
+			    -ms-transform: translate3d(15px, 5px, 0);
+			    	transform: translate3d(15px, 5px, 0);
+		}
+
+		.md_no-csstransforms3d .tooltip.left,
+		.md_no-csstransforms3d .tooltip.right{
+			-webkit-transform: translate(15px, 5px);
+			   -moz-transform: translate(15px, 5px);
+			     -o-transform: translate(15px, 5px);
+			    -ms-transform: translate(15px, 5px);
+			    	transform: translate(15px, 5px);
+		}
+
+		.tooltip.left{
+			right: auto;
+			left: 100%;
+			margin-right: 0;
+			margin-left: 9px;
+		}
+
+		.tooltip.left::after{
+			left: auto;
+			right: 100%;
+			border-left: none;
+			border-right: 7px solid #333;
+		}
+
+		.tooltip.right{
+			left: auto;
+			right: 100%;
+			margin-left: 0px;
+			margin-right: 9px;
+		}
+
+		.tooltip.right::after{
+			right: auto;
+			left: 100%;
+			border-right: none;
+			border-left: 7px solid #333;
+		}
+
+	/* --------------------------------------------
+			4.7. Dividers
+	-------------------------------------------- */
+
+		hr{
+			text-align: right;
+		}
+
+	/* --------------------------------------------
+			4.8. Blockquotes & Testimonials
+	-------------------------------------------- */
+
+		.author,
+		.testimonials.type_2{
+			text-align: right;
+		}
+
+		.a_avatar{
+			margin-right: 0px;
+			margin-left: 15px;
+		}
+
+		.testimonial.type_3 .a_avatar{
+			float: right;
+			margin-right: 0px;
+			margin-left: 20px;
+		}
+
+		blockquote > p:first-of-type::before,
+		blockquote > p:last-of-type::after{
+			content: "\"";
+		}
+
+		.blockquote.type_3{
+			padding-left: 50px;
+			padding-right: 58px;
+		}
+
+		.blockquote.type_3 > p:last-of-type::after{
+			right: auto;
+			left: -35px;
+		}
+
+		.blockquote.type_3 > p:first-of-type::before{
+			left: auto;
+			right: -42px;
+		}
+
+		.blockquote.type_2{
+			padding: 0 17px 0 0;
+			border-left-width: 0px;
+			border-right-width: 3px;
+		}
+	
+/* ------------------------------------------------
+
+		5. Widgets and Shortcodes
+
+------------------------------------------------ */
+
+	/* --------------------------------------------
+			5.1. Process Steps
+	-------------------------------------------- */
+
+		.process_steps:not(.type_2) .step{
+			float: right;
+		}
+
+		.process_steps:not(.type_2) .step:not(:last-child)::after{
+			right: auto;
+			left: -42px;
+
+			-webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+			   -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+			     -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+			    -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+					transform: matrix(-1, 0, 0, 1, 0, 0);
+		}
+
+	/* --------------------------------------------
+			5.2. Call to Action
+	-------------------------------------------- */
+
+		.cta.type_1 .cta_action{
+			text-align: left;
+		}
+
+		.cta.type_1 .cta_action > *{
+			text-align: right;
+		}
+
+	/* --------------------------------------------
+			5.3. Counters
+	-------------------------------------------- */
+
+		.counters .counter_item{
+			float: right;
+		}
+
+		.counter_item:not(:last-child)::after{
+			right: auto;
+			left: -1px;
+		}
+
+		.counters:not(.type_2) .counter{
+			margin-left: 0px;
+			margin-right: 105px;
+		}
+
+	/* --------------------------------------------
+			5.5. Countdown
+	-------------------------------------------- */
+
+		.countdown:not(.type_2) .countdown-section{
+			width: 24%;
+			float: right;
+		}
+
+		.countdown:not(.type_2) .countdown-section:not(:last-child){
+			margin-right: 0px;
+			margin-left: 1px;
+		}
+
+	/* --------------------------------------------
+			5.6. Pagination
+	-------------------------------------------- */
+
+		.pagination > li{
+			float: right;
+		}
+
+		.pagination > li:not(:last-child){
+			margin-right: 0px;
+			margin-left: 4px;
+		}
+
+		.page-prev::before{
+			content: "\e8b9";
+			margin-right: 0px;
+			margin-left: 9px;
+		}
+
+		.page-next::after{
+			content: "\e8b8";
+			margin-left: 0px;
+			margin-right: 9px;
+		}
+
+	/* --------------------------------------------
+			5.7. Icon Boxes
+	-------------------------------------------- */
+
+		.icon_box.type_2 .na_svg_icon{
+			float: right;
+			margin-right: 0px;
+			margin-left: 20px;
+		}
+
+		.md_csstransforms3d .icon_box.type_4:hover .front_side,
+		.md_csstransforms3d .icon_box.type_4 .back_side{
+			-webkit-transform: translate3d(15px, 15px, 0);
+			   -moz-transform: translate3d(15px, 15px, 0);
+				 -o-transform: translate3d(15px, 15px, 0);
+				-ms-transform: translate3d(15px, 15px, 0);
+					transform: translate3d(15px, 15px, 0);
+		}
+
+		.md_no-csstransforms3d .icon_box.type_4:hover .front_side,
+		.md_no-csstransforms3d .icon_box.type_4 .back_side{
+			-webkit-transform: translate(15px, 15px);
+			   -moz-transform: translate(15px, 15px);
+				 -o-transform: translate(15px, 15px);
+				-ms-transform: translate(15px, 15px);
+					transform: translate(15px, 15px);
+		}
+
+	/* --------------------------------------------
+			5.10. Banners
+	-------------------------------------------- */
+
+		.banners_row > .banner{
+			float: right;
+		}
+
+		.read_more::after{
+			display: none;
+		}
+
+		.read_more::before{
+			content: "\e8ab";
+			display: inline-block;
+			margin-left: 0px;
+			margin-right: 8px;
+		}
+
+		.text_banners_row > .text_banner:not(:first-child){
+			border-left-width: 0px;
+			border-right: 2px solid transparent;
+		}
+
+	/* --------------------------------------------
+			5.11. Tags
+	-------------------------------------------- */
+
+		.tags_cloud > li{
+			float: right;
+		}
+
+	/* --------------------------------------------
+			5.13. Calendar
+	-------------------------------------------- */
+
+		.t_calendar{
+			border-left: 2px solid #e0e0e0;
+			border-right: 2px solid #e0e0e0;
+		}
+
+		.tc_prev:not(.t_hide),
+		.tc_next:not(.t_hide){
+			display: inline-block;
+		}
+
+		.tc_prev{
+			margin-right: 0px;
+			margin-left: 10px;
+		}
+
+		.tc_next > span{
+			margin: 0 4px 0 0;
+		}
+
+		.tc_prev > span{
+			margin: 0 0 0 4px;
+		}
+
+	/* --------------------------------------------
+			5.14. Audio Player
+	-------------------------------------------- */
+
+		.wt_indicator{
+			left: auto;
+			right: 0;
+		}
+
+	/* --------------------------------------------
+			5.15. Tabs and Tour Sections
+	-------------------------------------------- */
+
+		.t_nav > li{
+			margin-right: 0px;
+			margin-left: 1px;
+		}
+
+		.tabs.type_3 .t_nav > li{
+			padding-right: 0px;
+			padding-left: 22px;
+		}
+
+		.tour_sections .t_nav{
+			float: right;
+		}
+
+		.t_container{
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+
+		.tour_sections .t_nav .btn{
+			text-align: right;
+		}
+
+	/* --------------------------------------------
+			5.16. Alert Boxes
+	-------------------------------------------- */
+
+		.alert_box,
+		.rd-alert_box{
+			padding-right: 20px;
+			padding-left: 40px;
+		}
+
+		.alert_box .close,
+		.rd-alert_box .close{
+			right: auto;
+			left: 7px;
+		}
+
+	/* --------------------------------------------
+			5.17. Accordions And Toggles
+	-------------------------------------------- */
+
+		.accordion:not(.type_2) dt,
+		.toggles:not(.type_2) dt{
+			padding-right: 20px;
+			padding-left: 40px;
+		}
+
+		.accordion:not(.type_2) dt::after,
+		.toggles:not(.type_2) dt::after{
+			right: auto;
+			left: 17px;
+		}
+
+		.accordion:not(.type_2) dt::after, .toggles:not(.type_2) dt::after{
+			content: "\e8a5";
+		}
+
+		.accordion.type_2 dt,
+		.toggles.type_2 dt{
+			padding-left: 0px;
+			padding-right: 50px;
+		}
+
+		.accordion.type_2 dt::before,
+		.toggles.type_2 dt::before{
+			left: auto;
+			right: 0px;
+			margin-right: 0px;
+			margin-left: 20px;
+		}
+
+	/* --------------------------------------------
+			5.18. Progress Bars and Pie Charts
+	-------------------------------------------- */
+
+		.value_indicator{
+			left: auto;
+			right: 0;
+		}
+
+		/* -------------------------------------------------------
+				5.18.1. Horizontal Progess Bars (by default)
+		------------------------------------------------------- */
+
+			.progress_bars:not(.vr) .bar_title{
+				padding-right: 0;
+				padding-left: 60px;
+			}
+
+			.progress_bars:not(.vr) .bar_title::after{
+				right: auto;
+				left: 0;
+			}
+
+		/* --------------------------------------------
+				5.18.2. Vertical Progress Bars
+		-------------------------------------------- */
+
+			.progress_bars.vr > li{
+				float: right;
+			}
+
+			.progress_bars.vr .value_indicator{
+				left: 0;
+			}
+
+		.pie_charts > li{
+			float: right;
+		}
+
+	/* --------------------------------------------
+			5.20. LightBox
+	-------------------------------------------- */
+
+		.overlay_box .ov_actions{
+			right: auto;
+			left: 20px;
+		}
+
+		.ov_actions > li:not(:first-child){
+			margin-left: 0px;
+			margin-right: 13px;
+		}
+
+		.mix_container:not(.full_width).four_columns .ov_actions,
+		.mix_container:not(.full_width).five_columns .ov_actions,
+		.isotope_container:not(.full_width).four_columns .ov_actions,
+		.isotope_container:not(.full_width).five_columns .ov_actions,
+		.mix_container.six_columns .mix .ov_actions,
+		.isotope_container.six_columns .isotope_item .ov_actions{
+			right: auto;
+			left: 10px;
+			bottom: 10px;
+		}
+
+		.mix_container:not(.full_width).four_columns .ov_actions > li:not(:first-child),
+		.mix_container:not(.full_width).five_columns .ov_actions > li:not(:first-child),
+		.isotope_container:not(.full_width).four_columns .ov_actions > li:not(:first-child),
+		.isotope_container:not(.full_width).five_columns .ov_actions > li:not(:first-child),
+		.mix_container.six_columns .mix .ov_actions > li:not(:first-child),
+		.isotope_container.six_columns .isotope_item .ov_actions > li:not(:first-child){
+			margin-left: 0px;
+			margin-right: 10px;
+		}
+
+	/* --------------------------------------------
+			5.22. Categories
+	-------------------------------------------- */
+
+		.categories li{
+			padding-left: 0px;
+			padding-right: 19px;
+		}
+
+		.open_subcategory{
+			left: auto;
+			right: 0;
+		}
+
+/* ------------------------------------------------
+
+		6. Sidebar
+
+------------------------------------------------ */
+
+	/* --------------------------------------------
+			6.1. Float Aside
+	-------------------------------------------- */
+
+		.float_aside{
+			right: auto;
+			left: 0px;
+		}
+
+		.md_csstransforms3d .float_aside_overlay .float_aside{
+			-webkit-transform: translate3d(-300px, 0, 0);
+			   -moz-transform: translate3d(-300px, 0, 0);
+				-ms-transform: translate3d(-300px, 0, 0);
+				 -o-transform: translate3d(-300px, 0, 0);
+					transform: translate3d(-300px, 0, 0);
+		}
+
+		.md_no-csstransforms3d .float_aside_overlay .float_aside{
+			-webkit-transform: translate(-300px, 0);
+			   -moz-transform: translate(-300px, 0);
+				-ms-transform: translate(-300px, 0);
+				 -o-transform: translate(-300px, 0);
+					transform: translate(-300px, 0);
+		}
+
+/* ------------------------------------------------
+
+		7. Main
+
+------------------------------------------------ */
+
+	.breadcrumbs > li:not(:last-child)::after{
+		margin: 0 7px 0 3px;
+	}
+
+	.white_col{
+		padding-right: 30px;
+		padding-left: 260px;
+	}
+
+	.two_half_fw > .col[class="col"], .two_half_fw > .white_col:first-child{
+		padding-left: 30px;
+		padding-right: 260px;
+	}
+
+	.personal_welcome{
+		padding-left: 0px;
+		padding-right: 170px;
+		background-position: left bottom;
+	}
+
+	.app_play_store .app_play_icon{
+		margin-right: 0px;
+		margin-left: 4px;
+	}
+
+	.streamlined > .streamlined_title{
+		float: right;
+		margin-right: 0px;
+		margin-left: 20px;
+	}
+
+	.read_more::after{
+		content: "\e8ab";
+		margin-left: 0px;
+		margin-right: 8px;
+	}
+
+/* ------------------------------------------------
+
+		9. Carousels
+
+------------------------------------------------ */
+
+	.owl_nav_prev{
+		left: auto;
+		right: 0;
+	}
+
+	.owl_nav_next{
+		right: auto;
+		left: 0;
+	}
+
+	.entry_carousel .owl_nav_prev,
+	.fw_projects_carousel .owl_nav_prev,
+	.single_project_carousel .owl_nav_prev,
+	.projects_carousel.type_2 .owl_nav_prev{
+		left: auto;
+		right: 20px;
+	}
+
+	.entry_carousel .owl_nav_next,
+	.fw_projects_carousel .owl_nav_next,
+	.single_project_carousel .owl_nav_next,
+	.projects_carousel.type_2 .owl_nav_next{
+		right: auto;
+		left: 20px;
+	}
+
+	.owl_ribbon_wrap .owl_nav_prev{
+		left: auto;
+		right: 320px;
+	}
+
+	.owl_ribbon_wrap .owl_nav_next{
+		right: auto;
+		left: 320px;
+	}
+
+	.products_carousel .owl_nav_next{
+		right: auto;
+		left: 5px;
+	}
+
+	.products_carousel .owl_nav_prev{
+		left: auto;
+		right: 5px;
+	}
+
+/* ------------------------------------------------
+
+		10. Sliders
+
+------------------------------------------------ */
+
+	/* --------------------------------------------
+			10.1. Layer Slider
+	-------------------------------------------- */
+
+		.layerslider .btn + .btn,
+		.rev_slider .btn + .btn{
+			margin-left: 0px;
+			margin-right: 7px;
+		}
+
+/* ------------------------------------------------
+
+		11. Portfolio
+
+------------------------------------------------ */
+
+	.one_column .project_details_area{
+		text-align: right;
+	}
+
+	.portfolio_area .project{
+		float: right;
+	}
+
+	.portfolio_nav .nav_prev{
+		float: right;
+	}
+
+	.portfolio_nav .nav_next{
+		float: left;
+	}
+
+/* ------------------------------------------------
+
+		12. Blog
+
+------------------------------------------------ */
+
+	.byline > li:not(:last-child)::after{
+		margin-left: 4px;
+		margin-right: 7px;
+	}
+
+	.inline_posts .entry_image,
+	.widget .entry_image{
+		float: right;
+		margin-right: 0px;
+		margin-left: 20px;
+	}
+
+	.entries_slider .entry_body{
+		left: auto;
+		right: 30px;
+	}
+
+	.md_csstransforms3d .entries_slider .entry_body{
+		-webkit-transform: translate3d(15px, 15px, 0);
+		   -moz-transform: translate3d(15px, 15px, 0);
+		     -o-transform: translate3d(15px, 15px, 0);
+		    -ms-transform: translate3d(15px, 15px, 0);
+				transform: translate3d(15px, 15px, 0);
+	}
+
+	.md_no-csstransforms3d .entries_slider .entry_body{
+		-webkit-transform: translate(15px, 15px);
+		   -moz-transform: translate(15px, 15px);
+		     -o-transform: translate(15px, 15px);
+		    -ms-transform: translate(15px, 15px);
+				transform: translate(15px, 15px);
+	}
+
+	.link_container{
+		padding: 25px 60px 25px 20px;
+	}
+
+	.link_container .si-icon{
+		left: auto;
+		right: 20px;
+	}
+
+	/* --------------------------------------------
+			12.1. Single Blog Post
+	-------------------------------------------- */
+
+		.tags_holder [class*="col-"]:last-child{
+			text-align: left;
+		}
+
+		.posts_nav_prev{
+			float: right;
+			padding: 0 0 0 15px;
+		}
+
+		.posts_nav_next{
+			float: left;
+			padding: 0 15px 0 0;
+		}
+
+		.posts_nav_prev::before{
+			content: "\e8b9";
+			margin: 0 0 0 8px;
+		}
+
+		.posts_nav_next::after{
+			margin: 0 8px 0 0;
+			content: "\e8b8";
+		}
+
+		.avatar{
+			float: right;
+			margin-right: 0px;
+			margin-left: 20px;
+		}
+
+		.about_author{
+			padding-right: 0;
+			padding-left: 40px;
+		}
+
+		.comments_list .children{
+			padding-left: 0px;
+			padding-right: 30px;
+		}
+
+		.comment_meta{
+			padding-right: 0px;
+			padding-left: 80px;
+		}
+
+		.reviews .comment_meta{
+			padding-right: 0px;
+			padding-left: 68px;
+		}
+
+		.reply,
+		.comment .rating{
+			right: auto;
+			left: 0px;
+		}
+
+		.reply::before{
+			content: "\e84b";
+			margin-right: 0px;
+			margin-left: 6px;
+		}
+
+/* ------------------------------------------------
+
+		13. Shop
+
+------------------------------------------------ */
+
+	/* --------------------------------------------
+			13.1. Product Boxes
+	-------------------------------------------- */
+
+		.price_rating > .price:not(:only-child)::after{
+			margin-left: 7px;
+			margin-right: 10px;
+		}
+
+		.rating .fill_state{
+			left: auto;
+			right: 0;
+		}
+
+		.product_box:not(.type_2) .product_actions{
+			left: auto;
+			right: 12px;
+		}
+
+		.products_list .product_thumb{
+			float: right;
+			margin-right: 0px;
+			margin-left: 20px;
+		}
+
+		.md_csstransforms3d .product_image_area .product_thumbs_wrap{
+			-webkit-transform: translate3d(-100%, 0, 0);
+			   -moz-transform: translate3d(-100%, 0, 0);
+				 -o-transform: translate3d(-100%, 0, 0);
+				-ms-transform: translate3d(-100%, 0, 0);
+					transform: translate3d(-100%, 0, 0);
+		}
+
+		.md_no-csstransforms3d .product_image_area .product_thumbs_wrap{
+			-webkit-transform: translate(-100%, 0);
+			   -moz-transform: translate(-100%, 0);
+				 -o-transform: translate(-100%, 0);
+				-ms-transform: translate(-100%, 0);
+					transform: translate(-100%, 0);
+		}
+
+		.product_image_area .product_thumbs_wrap{
+			right: auto;
+			left: 0px;
+		}
+
+		.product_image_area .product_thumbs{
+			right: auto;
+			left: 0;
+		}
+
+		.product_image_area .label{
+			left: auto;
+			right: 10px;
+		}
+
+			/* --------------------------------------------
+					13.1.1 List View
+			-------------------------------------------- */
+
+				.product_box.list_view .buttons_set,
+				.product_box.list_view .product_details_area{
+					text-align: right;
+				}
+
+	.sort_item{
+		float: right;
+	}
+
+	.sort_view{
+		float: left;
+	}
+
+	.sort_item:not(:last-child){
+		margin-right: 0px;
+		margin-left: 20px;
+	}
+
+	.sort_item > *{
+		margin-left: 0px;
+		margin-right: 7px;
+	}
+
+	.open_qv{
+		right: auto;
+		left: 10px;
+	}
+
+	.coupon_code{
+		margin-right: 0px;
+		margin-left: 7px;
+	}
+
+	.paypal_label > *{
+		margin-right: 0px;
+		margin-left: 17px;
+	}
+
+/* ------------------------------------------------
+
+		14. Footer
+
+------------------------------------------------ */
+
+	#footer.style_5 .copyright .sub_nav{
+		text-align: left;
+	}
+
+	.social_links{
+		margin-left: 0px;
+		margin-right: -1px;
+	}
+
+	.social_links > li{
+		margin: 0 1px 4px 0;
+	}
+
+	.dribbble_feed > li,
+	.flickr_feed > li,
+	.instagram_feed > li{
+		float: right;
+		margin-right: 0px;
+		margin-left: 2px;
+	}
+
+	.contact_info > li{
+		padding-left: 0px;
+		padding-right: 30px;
+	}
+
+	.contact_info i[class|="icon"]{
+		left: auto;
+		right: 0px;
+	}
+
+/* ------------------------------------------------
+
+		15. Modal Windows
+
+------------------------------------------------ */
+
+	.popup .close{
+		right: auto;
+		left: 17px;
+	}
+
+	.alert_message .buttons_col{
+		text-align: left;
+	}
+
+	.popup footer h6{
+		margin-right: 0px;
+		margin-left: 15px;
+	}
+
+	.popup.promo{
+		background-position: right top;
+	}
+
+	.dont_show_again{
+		right: auto;
+		left: -15px;
+	}
+
+/* ------------------------------------------------
+
+		16. Media Queries
+
+------------------------------------------------ */
+
+@media only screen and (min-width: 768px){
+
+	.container .table_row > [class|="col"]:first-child,
+	.pseudo_container .table_row > [class|="col"]:first-child{
+		padding-left: 15px;
+		padding-right: 0px;
+	}
+
+	.container .table_row > [class|="col"]:last-child,
+	.pseudo_container .table_row > [class|="col"]:last-child{
+		padding-right: 15px;
+		padding-left: 0px;
+	}
+
+}
+
+@media only screen and (min-width: 991px){
+
+	.table_row_md > [class|="col"]:first-child{
+		padding-left: 15px;
+		padding-right: 0px;
+	}
+
+	.table_row_md > [class|="col"]:last-child{
+		padding-right: 15px;
+		padding-left: 0px;
+	}
+
+}
+
+@media only screen and (max-width: 1400px){
+
+	.two_half_fw .description.col{
+		padding-left: 60px !important;
+		padding-right: 30px !important;
+	}
+
+}
+
+/* ------------------------------------------------
+
+		Bootstrap RTL layout
+
+------------------------------------------------ */
+
+@media only screen and (min-width: 768px){
+
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+		float: right;
+	}
+
+	.col-sm-offset-12{
+		margin-left: 0px;
+		margin-right: 100%;
+	}
+
+	.col-sm-offset-11{
+		margin-left: 0px;
+		margin-right:91.66666667%;
+	}
+
+	.col-sm-offset-10{
+		margin-left: 0px;
+		margin-right:83.33333333%;
+	}
+
+	.col-sm-offset-9{
+		margin-left: 0px;
+		margin-right:75%;
+	}
+
+	.col-sm-offset-8{
+		margin-left: 0px;
+		margin-right:66.66666667%;
+	}
+
+	.col-sm-offset-7{
+		margin-left: 0px;
+		margin-right:58.33333333%;
+	}
+
+	.col-sm-offset-6{
+		margin-left: 0px;
+		margin-right:50%;
+	}
+
+	.col-sm-offset-5{
+		margin-left: 0px;
+		margin-right:41.66666667%;
+	}
+
+	.col-sm-offset-4{
+		margin-left: 0px;
+		margin-right:33.33333333%;
+	}
+
+	.col-sm-offset-3{
+		margin-left: 0px;
+		margin-right:25%;
+	}
+
+	.col-sm-offset-2{
+		margin-left: 0px;
+		margin-right:16.66666667%;
+	}
+
+	.col-sm-offset-1{
+		margin-left: 0px;
+		margin-right:8.33333333%;
+	}
+
+	.col-sm-offset-0{
+		margin-left: 0px;
+		margin-right:0;
+	}
+
+}
+
+@media only screen and (min-width: 992px){
+
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+		float: right;
+	}
+
+	.col-md-offset-12{
+		margin-left: 0px;
+		margin-right: 100%;
+	}
+
+	.col-md-offset-11{
+		margin-left: 0px;
+		margin-right:91.66666667%;
+	}
+
+	.col-md-offset-10{
+		margin-left: 0px;
+		margin-right:83.33333333%;
+	}
+
+	.col-md-offset-9{
+		margin-left: 0px;
+		margin-right:75%;
+	}
+
+	.col-md-offset-8{
+		margin-left: 0px;
+		margin-right:66.66666667%;
+	}
+
+	.col-md-offset-7{
+		margin-left: 0px;
+		margin-right:58.33333333%;
+	}
+
+	.col-md-offset-6{
+		margin-left: 0px;
+		margin-right:50%;
+	}
+
+	.col-md-offset-5{
+		margin-left: 0px;
+		margin-right:41.66666667%;
+	}
+
+	.col-md-offset-4{
+		margin-left: 0px;
+		margin-right:33.33333333%;
+	}
+
+	.col-md-offset-3{
+		margin-left: 0px;
+		margin-right:25%;
+	}
+
+	.col-md-offset-2{
+		margin-left: 0px;
+		margin-right:16.66666667%;
+	}
+
+	.col-md-offset-1{
+		margin-left: 0px;
+		margin-right:8.33333333%;
+	}
+
+	.col-md-offset-0{
+		margin-left: 0px;
+		margin-right:0;
+	}
+
+}
+
+@media only screen and (min-width: 1200px){
+
+	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+		float: right;
+	}
+
+	.col-lg-offset-12{
+		margin-left: 0px;
+		margin-right: 100%;
+	}
+
+	.col-lg-offset-11{
+		margin-left: 0px;
+		margin-right:91.66666667%;
+	}
+
+	.col-lg-offset-10{
+		margin-left: 0px;
+		margin-right:83.33333333%;
+	}
+
+	.col-lg-offset-9{
+		margin-left: 0px;
+		margin-right:75%;
+	}
+
+	.col-lg-offset-8{
+		margin-left: 0px;
+		margin-right:66.66666667%;
+	}
+
+	.col-lg-offset-7{
+		margin-left: 0px;
+		margin-right:58.33333333%;
+	}
+
+	.col-lg-offset-6{
+		margin-left: 0px;
+		margin-right:50%;
+	}
+
+	.col-lg-offset-5{
+		margin-left: 0px;
+		margin-right:41.66666667%;
+	}
+
+	.col-lg-offset-4{
+		margin-left: 0px;
+		margin-right:33.33333333%;
+	}
+
+	.col-lg-offset-3{
+		margin-left: 0px;
+		margin-right:25%;
+	}
+
+	.col-lg-offset-2{
+		margin-left: 0px;
+		margin-right:16.66666667%;
+	}
+
+	.col-lg-offset-1{
+		margin-left: 0px;
+		margin-right:8.33333333%;
+	}
+
+	.col-lg-offset-0{
+		margin-left: 0px;
+		margin-right:0;
+	}
+
+}
+
+@media only screen and (max-width: 1400px){
+
+	.white_col, .testimonial_col{
+		padding-right: 30px !important;
+		padding-left: 60px !important;
+	}
+
+	.two_half_fw > .col[class="col"],
+	.two_half_fw > .white_col:first-child{
+		padding-left: 30px !important;
+		padding-right: 60px !important;
+	}
+
+}
+
+@media only screen and (max-width: 1200px){
+	
+	.back_to_top{
+		left: 20px;
+	}
+
+	.lookbook_carousel .owl-item > *{
+		text-align: right;
+	}
+
+	.personal_welcome{
+		padding-right: 50px;
+	}
+
+	.layer_2{
+		margin-left: auto;
+		margin-right: -84px;
+	}
+
+	.streamlined > .streamlined_title{
+		float: none;
+	}
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+
+	.mix_container.full_width.four_columns .mix .ov_actions,
+	.isotope_container.full_width.four_columns .isotope_item .ov_actions,
+	.mix_container.full_width.five_columns .mix .ov_actions,
+	.isotope_container.full_width.five_columns .isotope_item .ov_actions{
+		right: auto;
+		left: 10px;
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+	.mix_container.three_columns .mix .ov_actions,
+	.isotope_container.three_columns .isotope_item .ov_actions,
+	.mix_container.full_width.four_columns .mix .ov_actions,
+	.isotope_container.full_width.four_columns .isotope_item .ov_actions,
+	.mix_container.full_width.five_columns .mix .ov_actions,
+	.isotope_container.full_width.five_columns .isotope_item .ov_actions{
+		right: auto;
+		left: 10px;
+	}
+
+	.price_rating > .price:not(:only-child)::after{
+		margin-left: 3px;
+		margin-right: 6px;
+	}
+
+}
+
+@media only screen and (max-width: 991px){
+
+	.navigation > li:not(:last-child){
+		margin-right: 0px;
+		margin-left: 15px;
+	}
+
+	.experience_list .work_time{
+		float: none;
+		text-align: right;
+		padding-right: 0px;
+	}
+
+	.side_header:not(.transparent_header_type) .wide_layout{
+		margin-right: 0px;
+	}
+
+	.process_steps:not(.type_2) .step:not(:last-child)::after{
+		left: -32px;
+	}
+
+	.counters:not(.type_2) .counter_item .counter{
+		margin-right: 0px;
+	}
+
+	.container .h_info_list:only-child > li:first-child,
+	.pseudo_container .h_info_list:only-child > li:first-child{
+		padding-left: 10px;
+	}
+
+	.container .h_info_list:only-child > li:last-child,
+	.pseudo_container .h_info_list:only-child > li:last-child{
+		padding-right: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 767px){
+
+	.navigation > li:not(:last-child){
+		margin-left: 0px;
+	}
+
+	.navigation > li > a{
+		padding-right: 0px;
+		padding-left: 15px;
+	}
+
+	.navigation > [class*="has_"] > a::after{
+		right: auto;
+		left: 0;
+	}
+
+	.navigation .has_submenu .has_submenu > a,
+	.navigation .has_megamenu .has_submenu > a{
+		padding-right: 20px !important;
+		padding-left: 30px !important;
+	}
+
+	.has_megamenu .has_submenu > a::after,
+	.has_submenu .has_submenu > a::after{
+		left: 15px;
+	}
+
+	.has_submenu .dropdown,
+	.has_megamenu .dropdown,
+	.has_submenu .has_submenu .dropdown,
+	.has_megamenu .has_submenu .dropdown{
+		left: auto !important;
+		right: 0 !important;
+	}
+
+	.navigation .submenu .submenu a{
+		padding-left: 20px !important;
+		padding-right: 35px !important;
+	}
+
+	.navigation .submenu .submenu .submenu a{
+		padding-left: 20px !important;
+		padding-right: 50px !important;
+	}
+
+	.vertical_navigation .submenu .submenu a,
+	.vertical_navigation .submenu .submenu .submenu a{
+		padding-right: 0px !important;
+	}
+
+	.nav_title{
+		margin-right: 20px;
+	}
+
+	.table_wrap:not(.vr) table:not(.t_calendar) td:not([colspan]){
+		padding-left: 20px;
+		padding-right: 55%;
+	}
+
+	.table_wrap:not(.vr) table:not(.t_calendar) td[data-title]::before{
+		left: auto;
+		right: 20px;
+	}
+
+	.table_wrap:not(.vr) table:not(.t_calendar) td[data-title]::after{
+		border-width: 0 0 0 2px;
+		right: auto;
+		left: 50%;
+	}
+
+	.table_wrap:not([class*="type"]):not(.vr),
+	.table_wrap.type_3:not(.vr){
+		border-left-width: 2px;
+		border-right-width: 2px;
+	}
+
+	.cta.type_1 .cta_action{
+		text-align: right;
+	}
+
+	.two_half_fw .description.col{
+		padding-left: 10px !important;
+	}
+
+	.personal_welcome{
+		padding-right: 0px;
+	}
+
+	.introduce_text_box{
+		margin-left: 40%;
+		margin-right: 10px;
+	}
+
+	#header.style_5 .header_actions,
+	#footer.style_5 .copyright .sub_nav,
+	#header.style_7 .header_actions{
+		text-align: center;
+	}
+
+	.entries_slider .entry_body{
+		left: auto;
+		right: 5px;
+	}
+
+	.owl_ribbon_wrap{
+		margin-left: -200px;
+		margin-right: -200px;
+	}
+
+	.owl_ribbon_wrap .owl_nav_prev{
+		right: 220px;
+	}
+
+	.owl_ribbon_wrap .owl_nav_next{
+		left: 220px;
+	}
+
+	.white_col, .testimonial_col,
+	.two_half_fw > .col[class="col"],
+	.two_half_fw > .white_col:first-child{
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+
+	#header.style_2 .header_actions,
+	#header.style_6 .header_actions{
+		margin-right: 0px;
+	}
+
+	#header.style_2 .h_info_list > li{
+		border-left-width: 0px;
+	}
+
+	.text_banners_row > .text_banner:not(:first-child){
+		border-right: none;
+	}
+
+	.has_megamenu .has_submenu > a::after,
+	.has_megamenu .has_megamenu > a::after,
+	.has_submenu .has_submenu > a::after,
+	.has_submenu .has_megamenu > a::after{
+		content: "\ea7d";
+	}
+
+	.tags_holder [class*="col-"]:last-child{
+		text-align: inherit;
+	}
+
+	.posts_nav_prev,
+	.posts_nav_next{
+		float: none;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.about_author{
+		padding-left: 20px;
+	}
+
+	.comment_meta{
+		padding-left: 0px;
+	}
+
+	.reply{
+		float: left;
+	}
+
+	.sort_view{
+		float: right;
+	}
+
+	.sub_nav > li:not(:last-child)::after{
+		margin-right: 3px;
+	}
+
+	.table_wrap.type_2,
+	.table_wrap.type_4,
+	.table_wrap.vr:not([class*="type"]),
+	.table_wrap.vr.type_3{
+		border-left-width: 2px;
+		border-right-width: 2px;
+	}
+
+	.table_wrap.vr tbody tr > td::before{
+		margin-right: 0px;
+		margin-left: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 540px){
+
+	.t_container{
+		padding-right: 15px;
+	}
+
+	.tabs.type_3 .t_nav > li{
+		padding-left: 10px;
+	}
+
+	.portfolio_area .project{
+		float: none;
+	}
+
+	.owl_ribbon_wrap{
+		margin-left: -100px;
+		margin-right: -100px;
+	}
+
+	.owl_ribbon_wrap .owl_nav_prev{
+		right: 120px;
+	}
+
+	.owl_ribbon_wrap .owl_nav_next{
+		left: 120px;
+	}
+
+	.h_info_list.alignleft .dropdown,
+	.h_info_list.alignright .dropdown{
+		right: auto;
+		left: 50%;
+	}
+
+}
+
+@media only screen and (max-width: 320px){
+
+	.introduce_text_box{
+		margin-left: 10px;
+	}
+
+}

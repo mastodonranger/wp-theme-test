@@ -1,0 +1,47 @@
+.alert_message{
+	background-color: #333;
+}
+
+.alert_message .container{
+	width: 1140px;
+}
+
+svg,
+.has_submenu .dropdown::before,
+.has_megamenu .dropdown::before{
+	background: rgba(255, 0, 0, .0001);
+}
+
+.animated{
+	opacity: 1 !important;
+	visibility: visible !important;
+
+	-ms-animation: none !important;
+		animation: none !important;
+}
+
+.product_box:not(.type_2) .product_actions{
+	bottom: 25px;
+}
+
+.two_half_fw .col{
+	overflow: hidden;
+}
+
+.two_half_fw .image_caption_col::before{
+	bottom: auto;
+	height: 1000%;
+}
+
+.icon_only.btn i[class|="icon"]{
+	top: -3px;
+}
+
+.zoomContainer{
+	z-index: 1 !important;
+}
+
+.md_no-csstransforms3d .product_box:not(.type_2).list_view .product_actions > li{
+	-ms-transform: none;
+	transform: none;
+}
